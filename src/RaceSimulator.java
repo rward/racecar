@@ -23,6 +23,11 @@ public class RaceSimulator {
     track = new Track(200);
   }
   
+  public RaceSimulator(Track track) {
+    lapsinRace = 20;
+    this.track = track;
+  }
+  
   public boolean raceOver() {
     return raceOver;
   }
@@ -137,8 +142,8 @@ public String carStats() {
     
     String allStats = new String();
     for (RaceCar car : cars) {
-      allStats += String.format("%s Wins %d Seconds %d Total Races %d%n", 
-          car.getDriverName(), car.getWins(),car.getSeconds(),car.getRaces() );
+      allStats += String.format("%s Wins %d Seconds %d Total Races %d Percent Wins %.2f%n", 
+          car.getDriverName(), car.getWins(),car.getSeconds(),car.getRaces(), car.getWinPercent() );
     }
     return allStats;
   }

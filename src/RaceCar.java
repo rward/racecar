@@ -48,6 +48,13 @@ public class RaceCar {
     return wins;
   }
   /**
+   * @return the win win percent
+   */
+  public double getWinPercent() {
+    return  races != 0 ? 100.0 * wins/races : 0;
+  }
+  
+  /**
    * @param wins the wins to set
    */
   public void addWins() {
@@ -238,6 +245,7 @@ public class RaceCar {
         ,driverName , track.getPosition(lapCount - (int) lapCount), (int)Math.floor(lapCount));
     }
   }
+  
   
       
 
