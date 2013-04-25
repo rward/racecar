@@ -15,7 +15,7 @@ public class TestReadFile {
     //Bill,24,15,14,42
     //Sally,25,11,14,42
      
-    assertEquals(cars.get(0).getDriverName(), "Fred");
+    assertEquals(cars.get(0).getDriverName(), "Fred2");
     assertEquals(cars.get(1).getDriverName(), "Bill");
     assertEquals(cars.get(2).getDriverName(), "Sally");
   }

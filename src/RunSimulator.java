@@ -10,7 +10,7 @@ public class RunSimulator {
     
     sim.loadCars("racers2");
     
-    System.out.println(sim);
+    System.out.println(sim); 
     System.out.println(sim.carStats());
     while (!sim.raceOver()) {
       sim.tick();
